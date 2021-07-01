@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show hide password</title>
+</head>
+<script>
+    function fnshowpassword(){
+               //var passwordref= document.getElementById('password')
+                   //var attributevalue = passwordref.getAttribute('type')
+                   //console.log(attributevalue)
+
+                  // var passwordref = document.getElementById('password')
+                  // passwordref.setAttribute('placeholder','enter text')
+            //console.log(passwordref.getAttribute('placeholder'))
+
+            var passwordref=document.getElementById('password')
+           var buttonref= document.getElementById('button')
+                    if(passwordref.getAttribute('type')=='password'){
+                        passwordref.setAttribute('type','text') 
+                       buttonref .innerText="show password"
+                    } else {
+                        passwordref.setAttribute('type','password')
+                        
+                        buttonref.innerText="hide password"
+                       
+                    }
+                  
+    }
+   
+</script>
+<body>
+    <div style="text-align: center; margin-top: 100px;">
+        <h2>Show/Hide task</h2>
+        <input type="password" placeholder="Enter password" id="password">
+        <button onclick="fnshowpassword()"id="button">show password</button>
+    </div>
+</body>
+</html>

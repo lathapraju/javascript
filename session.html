@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    function fnsession() {
+            sessionStorage.setItem('name','latha')
+            sessionStorage.setItem('city','Bangalore')
+            sessionStorage.setItem('mobilenuber','9900174480')
+        
+    }
+    function fngetdat() {
+             var name = sessionStorage.getItem('name')
+             console.log(name)
+             var city = sessionStorage.getItem('city')
+             console.log(city)
+             var number= sessionStorage.getItem('mobilenuber')
+             console.log(number)
+            }
+
+    function fnupdate() {
+        sessionStorage.setItem('name','rithu')
+            sessionStorage.setItem('city','chennai')
+            sessionStorage.setItem('mobilenuber','9900174480')
+        
+    }
+
+    function fnremove() {
+        sessionStorage.removeItem('name')
+        
+    }
+
+    function fncleardata() {
+        sessionStorage.clear()
+        
+    }
+
+
+</script>
+</head>
+<body>
+<div style="margin-top: 50px; text-align: center;">
+<button onclick="fnsession()">store Data</button>
+<button onclick="fngetdat()">get data</button>
+<button onclick="fnupdate()">fnupdate</button>
+<button onclick="fnremove()">remove</button>
+
+<button onclick="fncleardata()">clear</button>
+</div>
+</body>
+</html>

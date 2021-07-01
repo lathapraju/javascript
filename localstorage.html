@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function fnstoredata() {
+        localStorage.setItem('name','latha')
+        localStorage.setItem('Email','lathapraju123@gmail.com')    
+    }
+
+    function fngetdata() {
+               var name = localStorage.getItem('name')
+                var Email = localStorage.getItem('Email')
+                console.log(name)
+                console.log(Email)
+    }
+ function updatedata() {
+     
+         localStorage.setItem('name','Ramya')
+        localStorage.setItem('Email','lathaweb002@gmail.com')  
+ }
+ 
+
+</script>
+
+
+
+<body>
+    <div style="margin-top: 50px;text-align: center;"></style>
+<button onclick="fnstoredata()"> store data</button>
+<button onclick="fngetdata()">get data</button>
+<button onclick="updatedata()">update Data</button>
+</div>
+
+    </div>
+</body>
+</html>

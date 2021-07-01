@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    function fnmode(){
+
+                var textref=document.getElementById('name')
+                textrefvalue = textref.value
+                console.log(textrefvalue)
+                var emailref=document.getElementById('Email')
+                emailrefvalue=emailref.value
+                console.log(emailrefvalue)
+                 var numberref=document.getElementById('number')
+                              var emailrefvalue=  numberref.value            
+                                console.log(emailrefvalue)
+                                document.getElementById("my form").reset()  
+                               
+ 
+                var xref= document.createElement("LI")
+                 var y =  document.createTextNode("coffee")
+                xref.appendChild(y)
+                document.getElementById("ol").appendChild(xref)
+                var yref=document.createElement("LI")
+                var x=document. createTextNode("TEA")
+                yref.appendChild(x)
+                document.getElementById("ol").appendChild(yref)
+              
+                                  
+                                                   
+
+        }
+    
+        fnmode()
+
+</script>
+</head>
+<body>
+    <h2>display ordered list</h2>
+    <ol id="ol">
+        <li >Computer</li>
+        <li>keyboard</li>
+        <li>Mouse</li>
+    </ol>
+
+
+   <div style="text-align: center; margin-left:100px; margin-top: 100px; background-color:aqua; border: 2px solid palevioletred; width: 40%;min-height: 50%;">
+    <form id ="my form" autocomplete="on"> 
+        <h2 style="font-size: 25px; color: blueviolet;" >FORM DETAILS</h2>   
+        <label for="NAME" > NAME:</label>  
+       
+        <input type=" name" placeholder="Enter your name"    id="name" style="padding: 10px 15px 15px 10px;" > <br><br>
+        <label for="EMAIL">Email:</label>
+        <input type="text" placeholder="Enter your Email" id="Email" style="padding: 10px 15px 15px 10px;"><br><br>
+        <label for="mobile number">Mobile Number:</label>
+        <input type="number" placeholder="Enter mobile number" id="number" style="padding:10px 15px 15px 10px;"></br><br>
+        <input type="button" onclick="fnmode()" value="login" id="button"  style="border: 1px solid red; background-color: rgb(101, 95, 160);padding:15px 20px;"> 
+        
+        
+    </div>
+    
+
+
+</form> 
+</body>
+</html>
