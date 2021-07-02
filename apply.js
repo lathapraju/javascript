@@ -1,11 +1,13 @@
+
 var obj = {
-    c:40
+    c:100
 }
 
-function myfun(a,b) {
-  var  a=x
+function myfun(x,y,z) {
+   var a=x
    var b=y
-    return a+b+ this.c
+   var d=z
+    return a+b+d+ this.c
 }
 
-console.log(myfun.apply(obj[30,50]))
+console.log(myfun.apply(obj,[100,100,70]))
